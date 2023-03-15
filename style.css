@@ -208,12 +208,27 @@ h1 {
 .bloc1 {
   display: flex;
   margin: 2rem 0;
+  margin: 0.5rem 19.1875rem 0.5rem 19.1875rem
 }
 
-.bloc1 .text1 .fgp {
+.text1{
+    display: flex;
+ flex-direction: column;
+ justify-content: center;
+ ;
+}
+
+ .bloc1 img {
+    height: 14.375rem;
 }
 
 /* galerie */
+.galerie{
+    margin: 0.5rem 19.1875rem 0.5rem 19.1875rem;
+    display :flex
+    }
 
-.galerie {
-}
+    .galerie img{
+        height: 43.75rem;
+        width: 43.75rem;
+    }
