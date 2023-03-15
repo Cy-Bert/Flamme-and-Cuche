@@ -189,10 +189,18 @@ nav ul li a:hover {
   flex-direction: column;
   align-items: center;
   font-size: 1.125em;
+  padding: 0 0 18.75rem 0;
+  background-image: url(img/FC_img_intro.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  color: #fff;
 }
 
 h1 {
   font-size: 2.5em;
+  padding: 5.6875rem 0 0 0;
 }
 
 /* bloc #1 */
@@ -208,27 +216,48 @@ h1 {
 .bloc1 {
   display: flex;
   margin: 2rem 0;
-  margin: 0.5rem 19.1875rem 0.5rem 19.1875rem
+  margin: 11.375rem 19.1875rem 0.5rem 19.1875rem;
 }
 
-.text1{
-    display: flex;
- flex-direction: column;
- justify-content: center;
- ;
+.text1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
- .bloc1 img {
-    height: 14.375rem;
+.bloc1 img {
+  height: 14.375rem;
 }
 
 /* galerie */
-.galerie{
-    margin: 0.5rem 19.1875rem 0.5rem 19.1875rem;
-    display :flex
-    }
 
-    .galerie img{
-        height: 43.75rem;
-        width: 43.75rem;
-    }
+.galerie {
+  margin: 0.5rem 19.1875rem 0.5rem 19.1875rem;
+  display: flex;
+  
+}
+
+.galerie img {
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 8px 16px 0px;
+}
+
+.img1{
+    height: 43.75rem;
+
+}
+.img2{
+    height: 43.75rem;
+}
+.img3{
+    height: 43.75rem;
+}
+
+.img4{
+    height: 43.75rem;
+}
+
+/* footer */
+footer{
+    background-color: black;
+}
+/* https://codepen.io/tamedia/pen/ByPyBP */
