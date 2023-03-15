@@ -1,0 +1,39 @@
+/* font */
+/* variable */
+:root{
+    --background-color: #fff;
+}
+/* header */
+
+
+
+
+
+
+/* navbar */
+nav {
+    background-color: var(--background-color);
+    color: black;
+    font-size: 1em;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+nav ul li a {
+    display: block;
+    margin: 0 1rem 0 0;
+    text-decoration: none;
+    color: black;
+}
+
+nav ul li:hover {
+    background-color: var(--background-color);
+    ;
+}
