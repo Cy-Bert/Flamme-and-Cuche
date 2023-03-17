@@ -201,8 +201,7 @@ nav ul li a:hover {
   background-color: #bf3308;
   border: none;
   color: white;
-  padding: 6px 12px;
-  text-align: center;
+  padding: 12px 12px;
   text-decoration: none;
   display: inline-block;
   border-radius: 4px;
@@ -273,11 +272,17 @@ h1 {
 .galerie {
   margin: 3.5rem 19.1875rem 0.5rem 19.1875rem;
   display: flex;
+  
 }
 
 .galerie img {
   box-shadow: rgba(0, 0, 0, 0.15) 0px 8px 16px 0px;
   height: 43.75rem;
+  margin: 20px;
+}
+.gal2, .gal4{
+    display: block;
+    
 }
 
 /* footer */
