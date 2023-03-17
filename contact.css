@@ -212,7 +212,28 @@ nav ul li a:hover {
 
 .contact_button:hover {
     background-color: #a22b07;
+
 }
+
+.titre {
+    background-color: #294755;
+    height: 6.5rem;
+    align-items: center;
+    display: flex;
+}
+
+h1 {
+    color: white;
+    font-size: 2.5em;
+    margin-left: 19.1875rem;
+
+}
+
+.bloc_gauche {
+    display: flex;
+    flex-direction: column;
+}
+
 
 /* footer */
 
