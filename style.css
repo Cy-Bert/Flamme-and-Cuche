@@ -154,13 +154,14 @@ body {
 /* header */
 
 header {
-  height: 3.5rem;
-  padding: 0.5rem 19.1875rem 0.5rem 19.1875rem;
-  overflow: hidden;
-  position: fixed;
-  top: 0;
-  min-width: 81rem;
-  background-color: #fff;
+    height: 3.5rem;
+    padding: 0.5rem 19.1875rem 0.5rem 19.1875rem;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 81rem;
+    background-color: #fff;
+    border-bottom: rgba(0, 0, 0, 0.247) solid .0625rem ; 
 }
 
 .logo {
@@ -279,9 +280,6 @@ h1 {
 .galerie {
   margin: 3.5rem 19.1875rem 0.5rem 19.1875rem;
   display: flex;
-}
-
-img {
 }
 
 .galerie img {
