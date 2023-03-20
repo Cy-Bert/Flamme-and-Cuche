@@ -6,46 +6,63 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Flamme and Cuche</title>
-  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
     integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon" />
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            mon_orange: "#bf3308",
+            horange: "#a22b07"
+          },
+
+          fontFamily: {
+            'notoserif': ['Noto Serif']
+          },
+        }
+      }
+    }
+  </script>
 </head>
 
-<body>
+<body class="text-base font-notoserif">
   <div class="body2">
     <!-- header -->
-    <header>
-      <nav>
-        <div class="header_gauche">
-          <a class="menu" href="index.html"><img class="logo" src="img/Logo_FC.png" alt="Logo" /></a>
-          <ul>
-            <li><a class="menu" href="index.html">Accueil</a></li>
-            <li><a class="menu" href="contact.html">Contactez-nous</a></li>
-            <li><a class="menu" href="carte.html">Notre Carte</a></li>
+    <header class="h-14 py-2 px-80 overflow-hidden fixed top-0  w-[119rem] bg-white border-b ">
+      <nav class="bg-white text-black flex justify-between">
+        <div class="flex flex-row">
+          <a class="menu" href="index.html"><img class="h-10 mr-6" src="img/Logo_FC.png" alt="Logo" /></a>
+          <ul class="list-none flex items-center ">
+            <li><a class="block mx-2 opacity-70 hover:opacity-100" href="index.html">Accueil</a></li>
+            <li><a class="block mx-2 opacity-70 hover:opacity-100" href="contact.html">Contactez-nous</a></li>
+            <li><a class="block mx-2 opacity-70 hover:opacity-100" href="carte.html">Notre Carte</a></li>
           </ul>
         </div>
-        <a class="contact_button" href="contact.html">Contactez-nous</a>
+        <a class="bg-mon_orange text-white rounded inline-block p-3 hover:bg-horange"
+          href="contact.html">Contactez-nous</a>
       </nav>
     </header>
     <!-- intro -->
-    <div class="intro">
-      <h1>Une flam's, ça vous dit</h1>
-      <p>
+    <div class="flex-column justify-center text-lg items-center pb-80 text-white bg-[url('/img/FC_img_intro.jpg')] bg-no-repeat bg-cover bg-center bg-fixed">
+      <h1 class="text-6xl font-bold pt-24">Une flam's, ça vous dit</h1>
+      <p class="mb-4 mt-1">
         Chez Flamme and Cuche, on vous propose de bonnes tartes flambées au feu
         de bois.
       </p>
-      <p>
+      <p class="mb-4 mt-">
         On se déplace à votre domicile pour tous vos événements, alors n'hésitez
         pas !
       </p>
-      <a class="contact_button" href="contact.html">Contactez-nous</a>
+      <a class="bg-mon_orange text-white rounded inline-block p-3 hover:bg-horange" href="contact.html">Contactez-nous</a>
     </div>
 
     <!-- Bloc #1 -->
 
-    <div class="bloc1">
+    <div class="flex row ">
       <div class="text1">
         <h2>Qu'est-ce que c'est</h2>
         <p>
@@ -54,7 +71,7 @@
           leurs heures perdues.
         </p>
         <p>
-          <span>Notre but ?</span> Vous régaler avec de délicieuses
+          <span class="font-bold">Notre but ?</span> Vous régaler avec de délicieuses
           flammekueches cuites au feu de bois, comme le veut la tradition
           alsacienne. Toutes nos flam's sont cuisinées avec des produits locaux
           et de qualité, un savoir-faire incomparable et beaucoup d'amour,
@@ -67,13 +84,13 @@
     <!-- galerie -->
 
     <section class="galerie">
-    <div class="gal4"><img class="img4" src="img/FC_img4.jpg" alt="photo flam's 4 " />
-      <img class="img2" src="img/FC_img2.jpg" alt="photo flam's 2 " />
-    </div>
-    <div class="gal2"><img class="img3" src="img/FC_img3.jpg" alt="photo flam's 3 " />
-      <img class="img1" src="img/FC_img1.jpg" alt="photo flam's 1 " />
-    </div>
-  </section>
+      <div class="gal4"><img class="img4" src="img/FC_img4.jpg" alt="photo flam's 4 " />
+        <img class="img2" src="img/FC_img2.jpg" alt="photo flam's 2 " />
+      </div>
+      <div class="gal2"><img class="img3" src="img/FC_img3.jpg" alt="photo flam's 3 " />
+        <img class="img1" src="img/FC_img1.jpg" alt="photo flam's 1 " />
+      </div>
+    </section>
 
 
   </div>
