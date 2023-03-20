@@ -162,6 +162,9 @@ header {
     top: 0;
     width: 81rem;
     background-color: #fff;
+    border-bottom: rgba(0, 0, 0, 0.247) solid .0625rem ; 
+
+    
 }
 
 .logo {
@@ -175,6 +178,7 @@ nav {
     font-size: 1em;
     display: flex;
     justify-content: space-between;
+    
 }
 
 .header_gauche {
@@ -212,6 +216,16 @@ nav ul li a:hover {
 
 .contact_button:hover {
     background-color: #a22b07;
+}
+
+/* body */
+
+.title{
+font-size: 3.875rem;
+justify-content: center;
+display: flex;
+margin-top: 2.1875rem;
+padding: 3.125rem;
 }
 
 /* footer */

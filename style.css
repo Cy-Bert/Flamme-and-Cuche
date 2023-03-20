@@ -159,8 +159,9 @@ header {
     overflow: hidden;
     position: fixed;
     top: 0;
-    width: 81rem;
+    width: 100vw;
     background-color: #fff;
+    border-bottom: rgba(0, 0, 0, 0.247) solid .0625rem ; 
 }
 
 .logo {

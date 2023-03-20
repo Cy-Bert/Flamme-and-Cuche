@@ -156,12 +156,14 @@ body {
 
 header {
     height: 3.5rem;
-    padding: 0.5rem 19.1875rem 0.5rem 19.1875rem;
+    padding: 0.5rem 19.1875rem  0 19.1875rem;
     overflow: hidden;
     position: fixed;
     top: 0;
     width: 81rem;
     background-color: #fff;
+    border-bottom: rgba(0, 0, 0, 0.247) solid .0625rem ; 
+
 }
 
 .logo {
@@ -199,7 +201,7 @@ nav ul li a:hover {
     color: rgb(0, 0, 0);
 }
 
-.contact_button {
+.contact_button, .boutton_envoyer{
     background-color: #bf3308;
     border: none;
     color: white;
@@ -210,16 +212,17 @@ nav ul li a:hover {
 
 }
 
-.contact_button:hover {
+.contact_button:hover, .boutton_envoyer:hover{
     background-color: #a22b07;
 
 }
-
+/* body */
 .titre {
     background-color: #294755;
     height: 6.5rem;
     align-items: center;
     display: flex;
+    margin-top: 65px;
 }
 
 h1 {
@@ -229,9 +232,60 @@ h1 {
 
 }
 
+.intro{
+    margin-bottom: .75rem;
+    line-height: 1.5rem;
+}
 .bloc_gauche {
     display: flex;
     flex-direction: column;
+    width: 70% ;
+
+}
+
+.formulaire{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.bloc_complet{
+    display: flex;
+    flex-direction: row;
+    
+    margin : 2.5rem 19.1875rem ;
+}
+
+.bloc_contact, .bloc_gauche{
+    margin: 0 .9375rem;
+}
+
+.divnom, .divtel, .divmail, .divsujet, .divquestion{
+    display: flex;
+    justify-content: space-between;
+    margin: .75rem 0 .75rem 0;
+    font-weight: bold;
+    align-items: center;
+    
+}
+
+input, textarea{
+    border : 1px solid rgba(0, 0, 0, 0.205);
+    border-radius: .25rem;
+    resize: vertical;
+    height: 2.375rem;
+    width: 40.625rem;
+
+}
+
+
+.boutton_envoyer{
+    width: 7.0625rem;
+    margin: 2.25rem 0 3rem 14.5rem ;
+}
+
+.bloc_contact div{
+    margin: 0.5rem  0;
 }
 
 
