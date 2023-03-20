@@ -282,6 +282,7 @@ input, textarea{
 .boutton_envoyer{
     width: 7.0625rem;
     margin: 2.25rem 0 3rem 14.5rem ;
+    cursor: pointer;
 }
 
 .bloc_contact div{

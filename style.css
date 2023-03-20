@@ -159,7 +159,7 @@ header {
     overflow: hidden;
     position: fixed;
     top: 0;
-    width: 100vw;
+    width: 81rem;
     background-color: #fff;
     border-bottom: rgba(0, 0, 0, 0.247) solid .0625rem ; 
 }
