@@ -6,127 +6,197 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Contact</title>
-  <link rel="stylesheet" href="contact.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
     integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+  <link rel="stylesheet" href="contact.css" />
   <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon" />
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            mon_orange: "#bf3308",
+            horange: "#a22b07",
+          },
+
+          fontFamily: {
+            notoserif: ["Noto Serif"],
+          },
+          boxShadow: {
+            img: "rgba(0, 0, 0, 0.15) 0 .5rem 1rem 0",
+          },
+        },
+      },
+    };
+  </script>
 </head>
 
-<body>
-  <div class="body2">
+<body class="text-base font-notoserif">
+  <div class="mb-80 bg-white relative z-10">
     <!-- header -->
-    <header>
-      <nav>
-        <div class="header_gauche">
-          <a class="menu" href="index.html"><img class="logo" src="img/Logo_FC.png" alt="Logo" /></a>
-          <ul>
-            <li><a class="menu" href="index.html">Accueil</a></li>
-            <li><a class="menu" href="contact.html">Contactez-nous</a></li>
-            <li><a class="menu" href="carte.html">Notre Carte</a></li>
+    <header
+      class="h-14 py-2 px-80 overflow-hidden fixed top-0 w-[119rem] bg-white border-b"
+    >
+      <nav class="bg-white text-black flex justify-between">
+        <div class="flex flex-row">
+          <a class="menu" href="index.html"
+            ><img class="h-10 mr-6" src="img/Logo_FC.png" alt="Logo"
+          /></a>
+          <ul class="list-none flex items-center">
+            <li>
+              <a
+                class="block mx-2 opacity-70 hover:opacity-100"
+                href="index.html"
+                >Accueil</a
+              >
+            </li>
+            <li>
+              <a
+                class="block mx-2 opacity-70 hover:opacity-100"
+                href="contact.html"
+                >Contactez-nous</a
+              >
+            </li>
+            <li>
+              <a
+                class="block mx-2 opacity-70 hover:opacity-100"
+                href="carte.html"
+                >Notre Carte</a
+              >
+            </li>
           </ul>
         </div>
-        <a class="contact_button" href="contact.html">Contactez-nous</a>
+        <a
+          class="bg-mon_orange text-white rounded inline-block p-3 hover:bg-horange"
+          href="contact.html"
+          >Contactez-nous</a
+        >
       </nav>
     </header>
 
     <!-- titre -->
-    <div class="titre">
-      <h1>Nous Contacter</h1>
+    <div class="bg-[#294755] flex align-center mt-16 h-16">
+      <h1 class="text-white ml-80 text-4xl">Nous Contacter</h1>
     </div>
     <!-- intro -->
-    <div class="bloc_complet">
-      <div class="bloc_gauche">
-        <div class="intro">
+    <div class="flex flex-row mx-80 my-10">
+      <div class="flex flex-col w-3/4 m-4">
+        <div class="mb-3 leading-6 ">
           <p>Contactez-nous pour tout renseignement ou demande de prix.</p>
           <p>Nous ferons de notre mieux pour vous répondre dans les plus brefs délais.</p>
         </div>
 
         <!-- form -->
-        <form class="formulaire">
-          <div class="divnom">
-            <label class="champ" for="name">Nom <span>*</span></label><input id="name" type="text"required />
+        <form class="flex flex-col">
+          <div class="flex justify-between m-3 text-bold align-center">
+            <label class="champ" for="name">Nom <span>*</span></label><input class="w-[40.625rem] h-9 resize-y border border-[#00000034]" id="name" type="text"required />
           </div>
 
-          <div class="divtel">
-            <label class="champ" for="tel">Téléphone</label><input id="tel" type="tel" />
+          <div class="flex justify-between m-3 text-bold align-center">
+            <label class="champ" for="tel">Téléphone</label><input class="w-[40.625rem] h-9 resize-y border border-[#00000034]" id="tel" type="tel" />
           </div>
-          <div class="divmail">
-            <label class="champ" for="mail">E-Mail <span>*</span></label><input id="mail" type="email" required
+          <div class="flex justify-between m-3 text-bold align-center">
+            <label class="champ" for="mail">E-Mail <span>*</span></label><input class="w-[40.625rem] h-9 resize-y border border-[#00000034]" id="mail" type="email" required
                />
           </div>
 
-          <div class="divsujet">
-            <label class="champ" for="sujet">Sujet <span>*</span></label><input id="sujet" type="text" required
+          <div class="flex justify-between m-3 text-bold align-center">
+            <label class="champ" for="sujet">Sujet <span>*</span></label><input class="w-[40.625rem] h-9 resize-y border border-[#00000034] rounded " id="sujet" type="text" required
                />
           </div>
-          <div class="divquestion">
+          <div class="flex justify-between m-3 text-bold align-center">
             <label class="champ" for="message">Question <span>*</span></label>
-            <textarea class="textarea" id="message"  required></textarea>
+            <textarea  class="w-[40.625rem] h-12 resize-y border border-[#00000034]" id="message"  required></textarea>
           </div>
-          <input class="boutton_envoyer" type="submit" value="Envoyer" />
+          <input class="bg-mon_orange text-white rounded inline-block p-3 hover:bg-horange w-28 mt-9 mb-12 ml-60 cursor-pointer" type="submit" value="Envoyer" />
 
         </form>
       </div>
 
 
       <!-- adresse -->
-      <div class="bloc_contact">
+      <div class="m-4">
         <p>Flamme and Cuche</p>
-        <div class="map2">
+        <div class="my-2">
           <span><i class="fa fa-map-marker fa-fw me-2"></i></span> Pouilley-les-Vignes
         </div>
-        <div class="tel2">
+        <div class="my-2">
           <span><i class="fa fa-phone fa-fw me-2"></i></span> +33 06 95 22 13 37
         </div>
-        <div class="mail2">
+        <div class="my-2">
           <span><i class="fa fa-envelope fa-fw me-2"></i></span>
           contact@flamme-and-cuche.fr
         </div>
       </div>
     </div>
   </div>
+
   <!-- footer -->
 
-  <footer>
-    <h3 class="title_apropos">A Propos de nous</h3>
-    <div class="footerbas">
-      <div class="apropos">
-        <p class="body_apropos">
+  <footer class="bg-black flex flex-col mt-16 bot-0">
+    <h3 class="text-white mb-8 text-bold text-2xl ml-80">A Propos de nous</h3>
+    <div class="flex justify-between mx-80">
+      <div class="flex flex-col text-white w-2/5 leading-6">
+        <p class="mt-4">
           Flamme and Cuche propose de vous régaler avec des tartes flambées
           alsaciennes faites maison, avec de bons produits locaux du savoir
           faire et beaucoup d'amour.
         </p>
-        <p class="body_apropos">
+        <p class="mt-4 mb-8">
           Cuites au feu de bois comme le veux la tradition, nos Flam's (nom
           scientifique des flammekueches) raviront les papilles des grands et
           des petits gourmands.
         </p>
       </div>
-      <div class="adress">
-        <p class="fc">Flamme and Cuche</p>
-        <p class="plv">25115 Pouilley-les-Vignes</p>
+      <div class="leading-6 text-[#ffffffb2]">
+        <p class="text-bold">Flamme and Cuche</p>
+        <p class="italic">25115 Pouilley-les-Vignes</p>
       </div>
-      <div class="contact">
-        <div class="tel">
-          <span><i class="fa fa-phone fa-fw me-2"></i></span><a href="tel:+033695221337"> 0695221337</a>
+      <div>
+        <div class="flex flex-row ml-4 mr-1 my-1">
+          <span class="text-white mr-3"
+            ><i class="fa fa-phone fa-fw me-2"></i></span
+          ><a
+            class="text-mon_orange hover:text-horange"
+            href="tel:+033695221337"
+          >
+            0695221337</a
+          >
         </div>
-        <div class="mail">
-          <span><i class="fa fa-envelope fa-fw me-2"></i></span><a href="mailto:contact@flamme-and-cuche.fr">
-            contact@flamme-and-cuche.fr</a>
+        <div class="flex flex-row ml-4 mr-1 my-1">
+          <span class="text-white mr-3"
+            ><i class="fa fa-envelope fa-fw me-2"></i></span
+          ><a
+            class="text-mon_orange hover:text-horange"
+            href="mailto:contact@flamme-and-cuche.fr"
+          >
+            contact@flamme-and-cuche.fr</a
+          >
         </div>
-        <div class="social">
+        <div class="flex flex-row mt-2 ml-6">
           <div>
-            <a href="https://www.instagram.com/flamme_and_cuche/"><i class="fa fa-2x fa-instagram m-1"></i></a>
+            <a
+              class="text-mon_orange hover:text-horange m-2"
+              href="https://www.instagram.com/flamme_and_cuche/"
+              ><i class="fa fa-2x fa-instagram m-1"></i
+            ></a>
           </div>
           <div>
-            <a href="https://www.facebook.com/people/Flamme-And-Cuche/100087545801252/"><i
-                class="fa fa-2x m-1 fa-facebook"></i></a>
+            <a
+              class="text-mon_orange hover:text-horange m-2"
+              href="https://www.facebook.com/people/Flamme-And-Cuche/100087545801252/"
+              ><i class="fa fa-2x m-1 fa-facebook"></i
+            ></a>
           </div>
         </div>
       </div>
     </div>
   </footer>
 </body>
-
 </html>
