@@ -1,41 +1,76 @@
 <!DOCTYPE html>
 <html lang="fr">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Flamme and Cuche</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
-      integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon" />
-    <script>
-      tailwind.config = {
-        theme: {
-          extend: {
-            colors: {
-              mon_orange: "#bf3308",
-              horange: "#a22b07",
-            },
 
-            fontFamily: {
-              notoserif: ["Noto Serif"],
-            },
-            boxShadow: {
-              img: "rgba(0, 0, 0, 0.15) 0 .5rem 1rem 0",
-            },
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Flamme and Cuche</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+    integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://fonts.bunny.net/css?family=noto-serif:400,400i,700,700i">
+  <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon" />
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            mon_orange: "#bf3308",
+            horange: "#a22b07",
+          },
+          fontFamily: {
+            notoserif: ["Noto Serif"],
+          },
+          boxShadow: {
+            img: "rgba(0, 0, 0, 0.15) 0 .5rem 1rem 0",
           },
         },
-      };
-    </script>
-  </head>
+      },
+    };
+  </script>
+</head>
 
+<body class="text-base font-notoserif">
+  <div class="mb-80 bg-white relative z-10">
+    <!-- header -->
+    <header class="h-14 py-2 px-80 overflow-hidden fixed top-0 w-[119rem] bg-white border-b">
+      <nav class="bg-white text-black flex justify-between">
+        <div class="flex flex-row">
+          <a class="menu" href="index.html"><img class="h-10 mr-6" src="img/Logo_FC.png" alt="Logo" /></a>
+          <ul class="list-none flex items-center">
+            <li>
+              <a class="block mx-2 opacity-70 hover:opacity-100" href="index.html">Accueil</a>
+            </li>
+            <li>
+              <a class="block mx-2 opacity-70 hover:opacity-100" href="contact.html">Contactez-nous</a>
+            </li>
+            <li>
+              <a class="block mx-2 opacity-70 hover:opacity-100" href="carte.html">Notre Carte</a>
+            </li>
+          </ul>
+        </div>
+        <a class="bg-mon_orange text-white rounded inline-block p-3 hover:bg-horange"
+          href="contact.html">Contactez-nous</a>
+      </nav>
+    </header>
+    <!-- intro -->
+    <div
+      class="flex flex-col justify-center items-center text-lg pb-80 text-white bg-[url('/img/FC_img_intro.jpg')] bg-no-repeat bg-cover bg-center bg-fixed">
+      <h1 class="text-6xl font-bold pt-24">Une flam's, ça vous dit</h1>
+      <p class="mb-4 mt-1">
+        Chez Flamme and Cuche, on vous propose de bonnes tartes flambées au
+        feu de bois.
+      </p>
+      <p class="mb-4 mt-1">
+        On se déplace à votre domicile pour tous vos événements, alors
+        n'hésitez pas !
+      </p>
+      <a class="bg-mon_orange text-white rounded inline-block p-3 hover:bg-horange"
+        href="contact.html">Contactez-nous</a>
+    </div>
   <body class="text-base font-notoserif">
     <div class="mb-80 bg-white relative z-10">
       <!-- header -->
@@ -98,120 +133,88 @@
         >
       </div>
 
-      <!-- Bloc #1 -->
+    <!-- Bloc #1 -->
 
-      <div class="flex flex-row leading-6 mt-44 mb-2 mx-0">
-        <div class="flex flex-col justify-center p-2.5 tracking-wider">
-          <h2 class="mt-2.5 mr-2.5 mb-2.5 text-3xl">Qu'est-ce que c'est</h2>
-          <p class="my-1.5 test-base">
-            Flamme and Cuche, c'est l'histoire de deux colocs qui se sont lancés
-            dans l'élaboration de tartes flambées alsaciennes pour s'occuper à
-            leurs heures perdues.
-          </p>
-          <p class="my-1.5 test-base">
-            <span class="font-bold">Notre but ?</span> Vous régaler avec de
-            délicieuses flammekueches cuites au feu de bois, comme le veut la
-            tradition alsacienne. Toutes nos flam's sont cuisinées avec des
-            produits locaux et de qualité, un savoir-faire incomparable et
-            beaucoup d'amour, évidemment
-          </p>
-        </div>
-        <img
-          class="h-56 shadow-img"
-          src="img/Flams_gros_plan.jpg"
-          alt="Flam's en gros plan"
-        />
+    <div class="flex flex-row leading-6 mt-44 mb-2 mx-80">
+      <div class="flex flex-col justify-center p-2.5 tracking-wider">
+        <h2 class="mt-2.5 mr-2.5 mb-2.5 text-3xl">Qu'est-ce que c'est</h2>
+        <p class="my-1.5 test-base">
+          Flamme and Cuche, c'est l'histoire de deux colocs qui se sont lancés
+          dans l'élaboration de tartes flambées alsaciennes pour s'occuper à
+          leurs heures perdues.
+        </p>
+        <p class="my-1.5 test-base">
+          <span class="font-bold">Notre but ?</span> Vous régaler avec de
+          délicieuses flammekueches cuites au feu de bois, comme le veut la
+          tradition alsacienne. Toutes nos flam's sont cuisinées avec des
+          produits locaux et de qualité, un savoir-faire incomparable et
+          beaucoup d'amour, évidemment
+        </p>
       </div>
-
-      <!-- galerie -->
-
-      <section class="flex mx-0 mt-14 mb-2">
-        <div class="block">
-          <img
-            class="shadow-img m-5 h-[43.75rem]"
-            src="img/FC_img2.jpg"
-            alt="photo flam's 2 "
-          />
-          <img
-            class="shadow-img m-5 h-[43.75rem]"
-            src="img/FC_img4.jpg"
-            alt="photo flam's 4 "
-          />
-        </div>
-        <div class="block">
-          <img
-            class="shadow-img m-5 h-[43.75rem]"
-            src="img/FC_img3.jpg"
-            alt="photo flam's 3 "
-          />
-          <img
-            class="shadow-img m-5 h-[43.75rem]"
-            src="img/FC_img1.jpg"
-            alt="photo flam's 1 "
-          />
-        </div>
-      </section>
+      <img class="h-56 shadow-img" src="img/Flams_gros_plan.jpg" alt="Flam's en gros plan" />
     </div>
-    <!-- footer -->
 
-    <footer class="bg-black flex flex-col mt-16 bot-0">
-      <h3 class="text-white mb-8 text-bold text-2xl ml-0">A Propos de nous</h3>
-      <div class="flex justify-between mx-0">
-        <div class="flex flex-col text-white w-2/5 leading-6">
-          <p class="mt-4">
-            Flamme and Cuche propose de vous régaler avec des tartes flambées
-            alsaciennes faites maison, avec de bons produits locaux du savoir
-            faire et beaucoup d'amour.
-          </p>
-          <p class="mt-4 mb-8">
-            Cuites au feu de bois comme le veux la tradition, nos Flam's (nom
-            scientifique des flammekueches) raviront les papilles des grands et
-            des petits gourmands.
-          </p>
+    <!-- galerie -->
+
+    <section class="flex mx-80 mt-14 mb-2">
+      <div class="my-5">
+        <img class="shadow-img my-5 h-[43.75rem]" src="img/FC_img2.jpg" alt="photo flam's 2 " />
+        <img class="shadow-img my-5 h-[43.75rem]" src="img/FC_img4.jpg" alt="photo flam's 4 " />
+      </div>
+      <div class="m-5">
+        <img class="shadow-img my-5 h-[43.75rem]" src="img/FC_img3.jpg" alt="photo flam's 3 " />
+        <img class="shadow-img my-5 h-[43.75rem]" src="img/FC_img1.jpg" alt="photo flam's 1 " />
+      </div>
+    </section>
+  </div>
+  <!-- footer -->
+
+  <footer class="bg-black flex flex-col mt-16 bottom-0 fixed ">
+    <h3 class="text-white mb-8 text-bold text-2xl ml-80">A Propos de nous</h3>
+    <div class="flex justify-between mx-80">
+      <div class="flex flex-col text-white w-2/5 leading-6">
+        <p class="mt-4">
+          Flamme and Cuche propose de vous régaler avec des tartes flambées
+          alsaciennes faites maison, avec de bons produits locaux du savoir
+          faire et beaucoup d'amour.
+        </p>
+        <p class="mt-4 mb-8">
+          Cuites au feu de bois comme le veux la tradition, nos Flam's (nom
+          scientifique des flammekueches) raviront les papilles des grands et
+          des petits gourmands.
+        </p>
+      </div>
+      <div class="leading-6 text-[#ffffffb2]">
+        <p class="text-bold">Flamme and Cuche</p>
+        <p class="italic">25115 Pouilley-les-Vignes</p>
+      </div>
+      <div>
+        <div class="flex flex-row ml-4 mr-1 my-1">
+          <span class="text-white mr-3"><i class="fa fa-phone fa-fw me-2"></i></span><a
+            class="text-mon_orange hover:text-horange" href="tel:+033695221337">
+            0695221337</a>
         </div>
-        <div class="leading-6 text-[#ffffffb2]">
-          <p class="text-bold">Flamme and Cuche</p>
-          <p class="italic">25115 Pouilley-les-Vignes</p>
+        <div class="flex flex-row ml-4 mr-1 my-1">
+          <span class="text-white mr-3"><i class="fa fa-envelope fa-fw me-2"></i></span><a
+            class="text-mon_orange hover:text-horange" href="mailto:contact@flamme-and-cuche.fr">
+            contact@flamme-and-cuche.fr</a>
         </div>
-        <div>
-          <div class="flex flex-row ml-4 mr-1 my-1">
-            <span class="text-white mr-3"
-              ><i class="fa fa-phone fa-fw me-2"></i></span
-            ><a
-              class="text-mon_orange hover:text-horange"
-              href="tel:+033695221337"
-            >
-              0695221337</a
-            >
+        <div class="flex flex-row mt-2 ml-6">
+          <div>
+            <a class="text-mon_orange hover:text-horange m-2" href="https://www.instagram.com/flamme_and_cuche/"><i
+                class="fa fa-2x fa-instagram m-1"></i></a>
           </div>
-          <div class="flex flex-row ml-4 mr-1 my-1">
-            <span class="text-white mr-3"
-              ><i class="fa fa-envelope fa-fw me-2"></i></span
-            ><a
-              class="text-mon_orange hover:text-horange"
-              href="mailto:contact@flamme-and-cuche.fr"
-            >
-              contact@flamme-and-cuche.fr</a
-            >
-          </div>
-          <div class="flex flex-row mt-2 ml-6">
-            <div>
-              <a
-                class="text-mon_orange hover:text-horange m-2"
-                href="https://www.instagram.com/flamme_and_cuche/"
-                ><i class="fa fa-2x fa-instagram m-1"></i
-              ></a>
-            </div>
-            <div>
-              <a
-                class="text-mon_orange hover:text-horange m-2"
-                href="https://www.facebook.com/people/Flamme-And-Cuche/100087545801252/"
-                ><i class="fa fa-2x m-1 fa-facebook"></i
-              ></a>
-            </div>
+          <div>
+            <a class="text-mon_orange hover:text-horange m-2"
+              href="https://www.facebook.com/people/Flamme-And-Cuche/100087545801252/"><i
+                class="fa fa-2x m-1 fa-facebook"></i></a>
           </div>
         </div>
       </div>
-    </footer>
-  </body>
+    </div>
+    <a href="#top" title="Faire défiler vers le haut" class="text-[#ffffffb2] flex justify-center">
+      <span class="fa fa-1x fa-chevron-up"></span>
+  </footer>
+</body>
+
 </html>
